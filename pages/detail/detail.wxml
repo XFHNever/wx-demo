@@ -1,0 +1,29 @@
+<!--detail.wxml-->
+<view class="doulist-item">
+    <view class="mod">
+        <view class="bd doulist-subject">
+          <view class="post">
+              <image src="{{movie.image}}"></image>
+          </view>
+          <view class="title">
+              <text>{{movie.title}}</text>
+          </view>
+          <view class="rating">
+              <text class="rating_nums">{{movie.star}}</text>
+          </view>
+          <view class="abstract">
+              <text>导演:{{movie.directors}}</text>
+              <text>主演:{{movie.casts}}</text>
+              <text>类型:{{movie.genres}}</text>
+              <text>年份:{{movie.year}}</text>
+          </view>
+        </view>
+    </view>
+</view>
+<view class="summary_title">
+  <text>{{movie.title}}的剧情简介</text>
+</view>
+<view class="summary_indent">
+  <text>{{movie.summary}}</text>
+</view>
+

@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<template name="movieItem">
+    <view class="mod" bindtap="jump2Detail" id="{{id}}">
+        <view class="bd doulist-subject">
+          <view class="post">
+              <image src="{{image}}"></image>
+          </view>
+          <view class="title">
+              <text>{{title}}</text>
+          </view>
+          <view class="rating">
+              <text class="rating_nums">{{star}}</text>
+          </view>
+          <view class="abstract">
+              <text>导演:{{directors}}</text>
+              <text>主演:{{casts}}</text>
+              <text>类型:{{genres}}</text>
+              <text>年份:{{year}}</text>
+          </view>
+        </view>
+    </view>
+</template>
+
+<view class="nav">
+  <text class="nav_title">{{title}}</text>
+</view>
+
+<scroll-view scroll-y class="list"  bindscrolltolower="loadMore" bindscrolltoupper="refesh">
+  <view class="doulist-item" wx:for="{{movies}}" wx:key="movies">
+    <template is="movieItem" data="{{...item}}"/>
+  </view>
+</scroll-view>
+
+
+

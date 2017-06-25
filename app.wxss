@@ -1,0 +1,69 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+.doulist-item {
+    margin: 20rpx 0;
+}
+.doulist-item .mod {
+    position: relative;
+    padding: 10rpx;
+    background: #f5f5f5;
+    color: #666;
+    word-wrap: break-word;
+}
+
+.doulist-item .bd {
+    padding: 20rpx;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 1rpx 1rpx rgba(0,0,0,0.2);
+}
+.doulist-item .doulist-subject .post {
+    float: left;
+    margin-right: 20rpx;
+    box-shadow: 0 0 1rpx rgba(0,0,0,0.1);
+}
+
+.doulist-item .doulist-subject .post image {
+  width:240rpx;
+  height:320rpx;
+}
+.doulist-item .doulist-subject .title {
+    margin-bottom: 6rpx;
+}
+.doulist-item .title {
+    margin-bottom: 10rpx;
+    font-size: 36rpx;
+    color: black;
+    font-weight: bold;
+}
+.doulist-item .doulist-subject .rating {
+    margin: 6rpx 0 4rpx 120rpx;
+}
+.rating_nums, .rating_num {
+    color: #e09015;
+    font-size: 16px;
+    padding: 0 3px;
+}
+
+.doulist-item .doulist-subject .abstract {
+    margin-left: 120rpx;
+}
+.doulist-item .bd .abstract {
+    margin-top:20px; 
+    overflow: hidden;
+}
+.doulist-item .bd .abstract text {
+    display:block;
+    font-size: 12px;
+    padding: 1px 3px;
+
+}

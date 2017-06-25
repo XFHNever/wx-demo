@@ -1,0 +1,12 @@
+/* detail.wxss */
+.summary_title {
+  color: #007722;
+  margin: 24rpx 0 3rpx 10rpx;
+}
+.summary_indent {
+  margin-bottom: 30rpx, 0;
+  word-break: break-all;
+  color: #333;
+  font-size: 12px;
+  padding: 10px 5px;
+}
